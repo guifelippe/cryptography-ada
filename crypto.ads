@@ -1,4 +1,4 @@
-package Criptografia is
+package Crypto is
    function Criptografar(Senha : in String) return String;
 end Criptografia;
 
@@ -19,4 +19,4 @@ package body Criptografia is
       end loop;
       return Criptografada;
    end Criptografar;
-end Criptografia;
+end Crypto;

@@ -1,4 +1,4 @@
-package Usuario is
+package User is
    type Usuario_Registro is record
       Nome : String(1 .. 50);
       Senha : String(1 .. 50);
@@ -21,4 +21,4 @@ package body Usuario is
          Ada.Text_IO.Put_Line("Não é possível criar mais usuários. Limite atingido.");
       end if;
    end Criar_Usuario;
-end Usuario;
+end User;

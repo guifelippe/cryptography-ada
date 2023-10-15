@@ -16,14 +16,16 @@ begin
    Ada.Text_IO.Put("Digite a senha: ");
    Ada.Text_IO.Get_Line(Senha);
    
-   Senha_Criptografada := Criptografia.Criptografar(Senha);
+   -- Chama a função de criptografia do módulo de criptografia
+   Senha_Criptografada := Crypto.Criptografar(Senha);
 
    Ada.Text_IO.Put("Nome de usuário: ");
    Ada.Text_IO.Put_Line(Nome_Usuario);
    Ada.Text_IO.Put("Senha criptografada: ");
    Ada.Text_IO.Put_Line(Senha_Criptografada);
    
-   Usuario.Criar_Usuario(Nome_Usuario, Senha_Criptografada);
+   -- Cria um novo usuário usando o módulo de gerenciamento de usuário
+   User.Criar_Usuario(Nome_Usuario, Senha_Criptografada);
    
    Ada.Text_IO.Put_Line("Usuário criado com sucesso!");
 end Main_Program;

@@ -21,7 +21,7 @@ The goal of this project is to provide a basic example of how to encrypt user pa
 1. Clone this repository to your system:
 
    ```bash
-   https://github.com/guifelippe/cryptography-ada.git
+   git clone https://github.com/guifelippe/cryptography-ada.git
 
 2. Navigate to the project directory:
 
